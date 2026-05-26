@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620">
+  <defs>
+    <style>
+      .title { font: 700 28px Arial, sans-serif; fill: #0f172a; }
+      .node { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 12; }
+      .accent { fill: #ecfeff; stroke: #0891b2; stroke-width: 2; rx: 12; }
+      .label { font: 600 20px Arial, sans-serif; fill: #0f172a; }
+      .small { font: 500 16px Arial, sans-serif; fill: #334155; }
+      .line { stroke: #334155; stroke-width: 2.5; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <text x="40" y="50" class="title">Retrieval: Article lookup + keyword + vector + graph expansion</text>
+
+  <rect x="60" y="110" width="220" height="80" class="node"/>
+  <text x="115" y="158" class="label">User Query</text>
+
+  <rect x="340" y="110" width="280" height="80" class="accent"/>
+  <text x="380" y="158" class="label">Query Analysis</text>
+
+  <rect x="710" y="70" width="250" height="80" class="node"/>
+  <text x="738" y="117" class="label">Article Lookup</text>
+
+  <rect x="710" y="180" width="250" height="80" class="node"/>
+  <text x="740" y="228" class="label">Keyword Search</text>
+
+  <rect x="710" y="290" width="250" height="80" class="node"/>
+  <text x="758" y="338" class="label">Vector Search</text>
+
+  <rect x="1020" y="160" width="220" height="90" class="accent"/>
+  <text x="1054" y="214" class="label">Score Merge</text>
+
+  <rect x="1020" y="300" width="220" height="100" class="accent"/>
+  <text x="1035" y="355" class="label">Graph Expansion</text>
+  <text x="1035" y="378" class="small">(siblings cùng article)</text>
+
+  <rect x="1020" y="450" width="220" height="90" class="node"/>
+  <text x="1068" y="504" class="label">Top Context</text>
+
+  <line x1="280" y1="150" x2="340" y2="150" class="line"/>
+  <line x1="620" y1="150" x2="710" y2="110" class="line"/>
+  <line x1="620" y1="150" x2="710" y2="220" class="line"/>
+  <line x1="620" y1="150" x2="710" y2="330" class="line"/>
+
+  <line x1="960" y1="110" x2="1020" y2="195" class="line"/>
+  <line x1="960" y1="220" x2="1020" y2="205" class="line"/>
+  <line x1="960" y1="330" x2="1020" y2="215" class="line"/>
+
+  <line x1="1130" y1="250" x2="1130" y2="300" class="line"/>
+  <line x1="1130" y1="400" x2="1130" y2="450" class="line"/>
+</svg>
