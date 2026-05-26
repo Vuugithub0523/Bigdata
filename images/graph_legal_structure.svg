@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="460" viewBox="0 0 1280 460">
+  <defs>
+    <style>
+      .title { font: 700 28px Arial, sans-serif; fill: #0f172a; }
+      .label { font: 600 20px Arial, sans-serif; fill: #0f172a; }
+      .small { font: 500 16px Arial, sans-serif; fill: #334155; }
+      .box { fill: #e2e8f0; stroke: #475569; stroke-width: 2; rx: 12; }
+      .chunk { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 2; rx: 12; }
+      .line { stroke: #334155; stroke-width: 2.5; marker-end: url(#arrow); }
+      .dline { stroke: #2563eb; stroke-width: 2.5; stroke-dasharray: 8 6; marker-end: url(#arrowBlue); }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <text x="40" y="48" class="title">Graph Model: Cấu trúc pháp luật chuẩn</text>
+
+  <rect x="40" y="120" width="180" height="70" class="box"/>
+  <text x="100" y="163" class="label">Law</text>
+
+  <rect x="260" y="120" width="200" height="70" class="box"/>
+  <text x="312" y="163" class="label">Chapter</text>
+
+  <rect x="500" y="120" width="180" height="70" class="box"/>
+  <text x="547" y="163" class="label">Article</text>
+
+  <rect x="720" y="120" width="180" height="70" class="box"/>
+  <text x="770" y="163" class="label">Clause</text>
+
+  <rect x="940" y="120" width="160" height="70" class="box"/>
+  <text x="995" y="163" class="label">Point</text>
+
+  <rect x="1110" y="280" width="150" height="80" class="chunk"/>
+  <text x="1145" y="326" class="label" style="fill:#1e3a8a;">Chunk</text>
+
+  <line x1="220" y1="155" x2="260" y2="155" class="line"/>
+  <line x1="460" y1="155" x2="500" y2="155" class="line"/>
+  <line x1="680" y1="155" x2="720" y2="155" class="line"/>
+  <line x1="900" y1="155" x2="940" y2="155" class="line"/>
+
+  <line x1="590" y1="190" x2="1140" y2="280" class="dline"/>
+  <line x1="810" y1="190" x2="1170" y2="280" class="dline"/>
+  <line x1="1020" y1="190" x2="1200" y2="280" class="dline"/>
+
+  <text x="40" y="240" class="small">Hierarchy: Law → Chapter → Article → Clause → Point</text>
+  <text x="40" y="270" class="small">Chunk được tạo từ Article/Clause/Point để phục vụ retrieval + vector index.</text>
+</svg>
